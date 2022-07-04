@@ -22,10 +22,138 @@ section {
     background-color: #f5f5f5;
 }
 
+.light-blue {
+    color: #28f1f1;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+.mail__btn {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: #242424;
+    color: #ffff;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    
+}
+
+
+.scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll__icon {
+    width: 20px;
+    height: 30px;
+    border: 2px solid #242424;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll__icon:after {
+    content: "";
+    background-color: #242424;
+    width: 4px;
+    height: 6px;
+    border-radius: 2px;
+    animation: scroll 1000ms infinite alternate-reverse;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(3px);
+    }
+
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
+
+/* anchor tags  effects */
+
+.click:hover {
+transform: scale(1.1);
+transition: all 300ms ease;
+}
+
+.click:active {
+    transform: scale(0.8);
+    transition: all 300ms ease;
+    }
+
 /* LANDING PAGE */
 
 #landing-page {
     min-height: 100vh;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 32px;
+}
+
+.title {
+    font-size: 120px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1;
+}
+
+.title__secondary {
+    color: #28f1f1;
+}
+
+.header__info {
+    font-size: 24px;
+    line-height: 2;
+    max-width: 450px;
+    
+}
+
+.social__links {
+   margin-top: 16px; 
+   display: flex;
+   
+}
+
+.social__link {
+    background-color: #28f1f1;
+    color: #fff;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  
+    
 }
 
 /* NAVIGATION */
@@ -34,6 +162,7 @@ section {
     filter: invert(0);
     width: 50px;
     height: 50px;
+   
 }
 
 nav {
@@ -43,6 +172,7 @@ nav {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
     height: 100px;
 
 }
