@@ -1,6 +1,4 @@
-// template_48ylnpe
-// service_qlkhxiq
-// Q_RyNeu2jmf94M_0x
+
 
 function contact(event) {
     event.preventDefault();
@@ -26,3 +24,15 @@ function contact(event) {
 
 };
 
+
+
+
+let isModalOpen = false;
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove('modal__open');
+    };
+    isModalOpen = true;
+    document.body.classList += ' modal__open';
+};
